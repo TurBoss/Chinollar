@@ -36,9 +36,9 @@ function rewardTeam(unitID, unitDefID, unitTeam, attackerID, attackerDefID, atta
 	--Spring.Echo(Spring.GetPlayerInfo(0))
 	local name = nil
 	
-	--if unitTeam == gaiaTeamID and unitID == 10600 or unitID == 10601 or unitID == 10602 or unitID == 10603 then 
-	--	Spring.AddTeamResource(attackerTeam, "m", 500)
-	--end
+	if unitTeam == gaiaTeamID and unitID == 10600 or unitID == 10601 or unitID == 10602 or unitID == 10603 then 
+		Spring.AddTeamResource(attackerTeam, "m", 500)
+	end
 	
 	if attackerTeam ~= nil then
 		if attackerTeam ~= gaiaTeamID then
