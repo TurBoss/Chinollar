@@ -33,7 +33,7 @@ function CreateWindow(winner)
 	if winner == tostring(Spring.GetMyTeamID()) then
 		caption = "Victory"
 	elseif winner ~= tostring(Spring.GetMyTeamID()) then
-		caption = "Loose"
+		caption = "Defeated"
 	end
 	
 	Window = Chili.Window:New{
