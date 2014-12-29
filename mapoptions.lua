@@ -93,7 +93,7 @@ local options = {
 		desc = "flip world",
 		type = 'bool',
 		section = 'Terrain',
-		def = true,
+		def = false,
 	},
 
 	--// Economy

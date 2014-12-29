@@ -152,10 +152,7 @@ function spawnNPC(i)
 		{x=3380,name="destructor",z=2030,unitID=10602,rot="west",},
 		{x=715,name="destructor",z=2030,unitID=10603,rot="east",},
 	}
-	Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
-	--[[for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
-	end]]--
+	Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
 end
 
 function spawnTurrets1()
@@ -170,7 +167,7 @@ function spawnTurrets1()
 		{x=1567,name="torreta",z=2537,unitID=10505,rot="east",},
 	}
 	for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
+		Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
 	end
 end
 
@@ -186,7 +183,7 @@ function spawnTurrets2()
 		{x=2537,name="torreta",z=1562,unitID=10511,rot="west",},
 	}
 	for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)
+		Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)
 	end
 end
 

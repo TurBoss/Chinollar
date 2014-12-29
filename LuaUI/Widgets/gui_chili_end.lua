@@ -83,7 +83,6 @@ function widget:Shutdown()
 end
 
 function widget:RecvLuaMsg(msg, playerID)
-	Spring.Echo(msg:sub(9))
 	if not speccing then
 		if (msg:sub(1,8) == 'gameover') then
 			local winner = msg:sub(9)
